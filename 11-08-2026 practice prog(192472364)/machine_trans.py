@@ -7,10 +7,16 @@ response = ollama.chat(
     messages=[
         {
             "role": "user",
-            "content": f"Translate the following English text into Telugu:\n{text}"
+            "content": f"Translate the following English text into Tamil:\n{text}"
         }
-    ]
+    ],
+    options={
+        "temperature": 0.2
+    }
 )
 
-print("Translated Text:")
+print("Original Text:")
+print(text)
+
+print("\nTranslated Text:")
 print(response["message"]["content"])
