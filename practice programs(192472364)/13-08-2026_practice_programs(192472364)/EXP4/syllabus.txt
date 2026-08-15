@@ -1,0 +1,11 @@
+Unit 1: Introduction to Artificial Intelligence
+Topics include AI fundamentals, machine learning, deep learning, natural language processing, and generative AI.
+
+Unit 2: Prompt Engineering
+Topics include prompt design, zero-shot prompting, few-shot prompting, temperature, and prompt constraints.
+
+Unit 3: Large Language Models
+Topics include transformers, tokenization, autoregressive generation, text generation, and question answering.
+
+Unit 4: Retrieval Augmented Generation
+Topics include document loading, text chunking, embeddings, vector databases, retrieval, and generation.

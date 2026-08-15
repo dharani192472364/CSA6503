@@ -1,0 +1,33 @@
+PRODUCTION REVIEW MEETING TRANSCRIPT
+
+Date: 10 September 2026
+
+The production review meeting began at 9:00 AM with the operations manager reviewing the performance of the manufacturing plant during the previous week. The main objective was to discuss production output, machine performance, quality defects, maintenance activities, and pending customer orders.
+
+The production manager reported that the plant produced 4,800 units during the week against the planned target of 5,000 units. Production was therefore 200 units below the weekly target. The main reason was an unexpected stoppage of the CNC-450 machine on Tuesday morning. The machine remained unavailable for approximately six hours.
+
+The maintenance engineer explained that the CNC-450 experienced a spindle motor overheating problem. The maintenance team inspected the cooling system and found that the coolant flow rate was lower than the required level. The coolant pump was replaced on Tuesday afternoon and the machine was returned to production at 5:30 PM.
+
+The production manager stated that the six-hour stoppage resulted in approximately 120 units of lost production capacity. The remaining production loss was caused by slower operation of the Assembly-220 line during the first two shifts on Wednesday.
+
+The quality manager presented the weekly defect report. A total of 86 defective units were identified from the 4,800 units produced. The overall defect rate was therefore 1.79 percent. The most common defect was incorrect surface finishing, with 34 units affected. The second largest category was dimensional variation, involving 27 units. Electrical connector problems accounted for 15 units, while packaging defects accounted for 10 units.
+
+The quality manager explained that the surface-finishing defects were mainly detected in products manufactured during the night shift. The team suspected that the polishing machine settings were not being checked consistently at the beginning of each shift. The quality supervisor was asked to introduce a mandatory machine-setting checklist.
+
+The maintenance department also reported that the Packaging-310 machine required preventive maintenance. The maintenance engineer recommended replacing the conveyor belt before the end of the month. The estimated maintenance duration was four hours. The team agreed to schedule the activity during the Sunday maintenance window so that production would not be affected.
+
+The logistics manager then discussed customer shipments. Three customer orders were currently at risk of delay. Order PO-4471 contained 400 units and was scheduled for shipment on 12 September. Order PO-4492 contained 250 units and was scheduled for shipment on 14 September. Order PO-4510 contained 180 units and was scheduled for shipment on 15 September.
+
+The operations manager instructed the logistics team to prioritize PO-4471 because it was associated with a long-standing customer account. The logistics team confirmed that 250 units were already completed and ready for dispatch. The remaining 150 units were expected to be completed by 11 September.
+
+The purchasing manager reported that one supplier had informed the company about a shortage of raw casting material. The supplier expected the shortage to continue for approximately five days. The purchasing department was contacting an alternative supplier to avoid further production disruption.
+
+The finance representative asked whether the additional maintenance and alternative sourcing activities would affect the monthly production budget. The operations manager stated that the Packaging-310 maintenance activity had already been included in the maintenance budget. However, alternative sourcing could increase material cost by approximately 6 percent if the second supplier was used.
+
+The safety officer reviewed workplace safety observations. Two minor incidents were recorded during the week. Neither incident resulted in injury, but both involved improper storage of tools near the Assembly-220 workstation. The safety officer requested that supervisors conduct a five-minute workstation inspection at the beginning of every shift.
+
+The plant manager summarized the major decisions. First, the CNC-450 cooling system would be monitored for the next seven days after the pump replacement. Second, the quality team would introduce the machine-setting checklist for the night shift. Third, Packaging-310 preventive maintenance would be completed during the Sunday maintenance window. Fourth, PO-4471 would receive shipment priority. Fifth, the purchasing team would continue discussions with the alternative supplier.
+
+The production manager assigned responsibilities for the actions. The maintenance engineer would monitor CNC-450 until 17 September. The quality supervisor would introduce the checklist by 12 September. The maintenance department would complete Packaging-310 maintenance on 13 September. The logistics manager would provide a shipment update for PO-4471 by 11 September. The purchasing manager would evaluate the alternative supplier by 12 September.
+
+The meeting ended with the plant manager emphasizing that production output should return to the target of 5,000 units during the next reporting period. The next production review meeting was scheduled for 17 September 2026 at 9:00 AM.
