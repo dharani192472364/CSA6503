@@ -1,0 +1,125 @@
+Q10 – MULTIMODAL AI APPROACHES FOR KNOWLEDGEDESK
+================================================
+
+KnowledgeDesk must process enterprise documents available in multiple
+formats such as PDF, DOCX, scanned images and text documents. A
+multimodal document-processing pipeline can convert these different
+inputs into searchable and grounded knowledge.
+
+1. PDF DOCUMENTS
+----------------
+For text-based PDFs, a PDF parser can extract the text and preserve
+metadata such as document name and page number.
+
+Example:
+PDF → Text Extraction → Page Metadata → Chunking → Embedding → Vector DB
+
+The page number must be stored with each chunk so that the final answer
+can cite the original document and page.
+
+2. DOCX DOCUMENTS
+-----------------
+DOCX files can be processed by extracting paragraphs, headings and
+tables. The extracted content can then be divided into chunks.
+
+Example:
+DOCX → Text/Table Extraction → Metadata → Chunking → Embedding → Vector DB
+
+Document name, section heading and page/section information should be
+retained where possible.
+
+3. SCANNED DOCUMENTS AND IMAGES
+-------------------------------
+Scanned documents do not contain machine-readable text. Optical
+Character Recognition (OCR) can be used to convert the image into text.
+
+Example:
+Scanned PDF/Image → OCR → Text + Page Metadata → Chunking → Embedding
+
+For complex pages containing diagrams, tables or figures, a vision
+language model can additionally interpret the visual information.
+
+4. TABLES AND DIAGRAMS
+----------------------
+Enterprise documents may contain tables, charts and diagrams. Instead
+of extracting only plain text, a multimodal pipeline can use document
+layout analysis and vision-language models to understand the visual
+content.
+
+Example:
+Document → Layout Detection → Text/Table/Image Analysis → Structured
+Representation → Embedding → Vector Database
+
+5. MULTIMODAL RETRIEVAL
+-----------------------
+The system can maintain a unified representation of textual and visual
+information. A user query can retrieve text chunks, table information
+or relevant page images.
+
+For example, a question about a quality inspection table can retrieve
+both the textual explanation and the corresponding table.
+
+6. GROUNDED ANSWERING
+---------------------
+The LLM should generate answers only from retrieved evidence. Each
+retrieved item should contain source metadata such as:
+
+Document Name
+Page Number
+Section
+Content Type
+
+The final answer should cite the document and page.
+
+7. RECOMMENDED KNOWLEDGEDESK PIPELINE
+-------------------------------------
+
+                 Enterprise Documents
+                         |
+        +----------------+----------------+
+        |                |                |
+       PDF             DOCX          Scanned Image
+        |                |                |
+   PDF Parser       DOCX Parser          OCR
+        |                |                |
+        +----------------+----------------+
+                         |
+                  Content + Metadata
+                         |
+                   Chunking
+                         |
+                  Embeddings
+                         |
+                  Vector Store
+                         |
+                      Retrieval
+                         |
+                 Evidence Checking
+                         |
+                    LLM Answer
+                         |
+                Source + Page Citation
+
+8. BENEFITS
+-----------
+• Supports multiple enterprise document formats.
+• Enables search over scanned documents.
+• Preserves source and page information.
+• Supports tables, diagrams and images.
+• Improves accessibility of enterprise knowledge.
+• Enables grounded answers from multimodal evidence.
+
+9. SECURITY CONSIDERATIONS
+---------------------------
+Sensitive enterprise documents should be processed using approved
+internal infrastructure. Personally identifiable information should
+not be unnecessarily sent to external APIs. Role-based access control
+must be applied before retrieving documents.
+
+CONCLUSION
+----------
+A multimodal KnowledgeDesk architecture combines document parsing, OCR,
+layout understanding, embeddings, retrieval and a grounded LLM. This
+allows employees to ask questions over PDFs, DOCX files, scanned
+documents, tables and visual content while maintaining source
+traceability and enterprise security.

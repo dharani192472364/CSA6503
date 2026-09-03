@@ -1,0 +1,39 @@
+KNOWLEDGEDESK - Q8 RETRIEVAL EVALUATION DATASET
+======================================================================
+
+1. Question: How many annual leave days are provided to employees with more than three years of service?
+   Correct Source: HR_Leave_Policy_2026.txt
+
+2. Question: How many weeks of maternity leave are eligible employees entitled to?
+   Correct Source: HR_Maternity_Policy_2026.txt
+
+3. Question: Within how many days must travel reimbursement claims be submitted?
+   Correct Source: HR_Travel_Policy_2026.txt
+
+4. Question: How often must employees change their corporate password?
+   Correct Source: IT_Password_Policy_2026.txt
+
+5. Question: What must remote employees use before accessing internal systems?
+   Correct Source: IT_VPN_Policy_2026.txt
+
+6. Question: What should happen to a company laptop when an employee leaves?
+   Correct Source: IT_Laptop_Policy_2026.txt
+
+7. Question: What must happen before manufactured components are shipped?
+   Correct Source: QUALITY_SOP_Inspection.txt
+
+8. Question: What should be done with products that have critical defects?
+   Correct Source: QUALITY_SOP_Defect.txt
+
+9. Question: What should employees do during a fire emergency?
+   Correct Source: SAFETY_SOP_Fire.txt
+
+10. Question: Who must be notified immediately about a chemical spill?
+   Correct Source: SAFETY_SOP_Chemical.txt
+
+11. Question: What percentage of functional test requirements did Project Alpha achieve?
+   Correct Source: PROJECT_REPORT_Alpha.txt
+
+12. Question: What should employees do with records subject to a legal hold?
+   Correct Source: COMPLIANCE_Data_Retention.txt
+

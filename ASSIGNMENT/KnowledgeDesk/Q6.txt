@@ -1,0 +1,86 @@
+KNOWLEDGEDESK – Q6 PROMPTING STRATEGY AND HALLUCINATION CONTROL
+
+1. RECOMMENDED PROMPTING STRATEGY
+
+The recommended strategy for KnowledgeDesk is a ROLE-BASED SYSTEM PROMPT with
+explicit grounding, citation, and refusal instructions.
+
+This strategy is preferred because KnowledgeDesk is an enterprise assistant where
+answers must be based only on authorised company documents.
+
+The prompt should instruct the LLM to:
+
+- Use only retrieved document context.
+- Never invent or guess information.
+- Provide a citation for every factual statement.
+- Include the document name and page number.
+- Refuse to answer when retrieved evidence is insufficient.
+- Follow a consistent response format.
+- Respect role-based access restrictions.
+
+2. WHY THIS STRATEGY IS SUITABLE
+
+Groundedness:
+Explicit grounding rules reduce unsupported answers because the model is instructed
+to use only retrieved evidence.
+
+Latency:
+A well-designed system prompt does not require additional model calls. Therefore,
+it introduces only a small prompt-processing overhead and helps maintain the
+3-second response-time requirement.
+
+Cost:
+The system prompt is reusable and compact. It does not require fine-tuning or
+additional inference calls, helping KnowledgeDesk remain within the Rs. 40,000
+monthly inference budget.
+
+Consistency:
+The role-based prompt provides a fixed response structure and citation format,
+making answers consistent across employee queries.
+
+3. HALLUCINATION CONTROL
+
+Temperature:
+Use a low temperature such as 0.1–0.2 for factual enterprise questions. This
+reduces unnecessary variation and encourages deterministic responses.
+
+Decoding:
+Use conservative decoding settings. A low temperature and controlled output
+length should be used to reduce unsupported or creative content.
+
+Output Schema:
+Require a structured response such as:
+
+Answer: <grounded answer>
+
+Source:
+- <document name>, Page <page number>
+
+This makes citation verification easier.
+
+Explicit Refusal Instruction:
+If the retrieved evidence is insufficient, the model must respond:
+
+"I’m sorry, but I cannot answer this question from the available KnowledgeDesk
+documents."
+
+The model must not fill missing information using general knowledge.
+
+4. RECOMMENDED SYSTEM PROMPT BEHAVIOUR
+
+The final KnowledgeDesk system prompt should enforce the following rules:
+
+1. Answer only from retrieved authorised documents.
+2. Do not guess or fabricate information.
+3. Cite every factual statement.
+4. Include document name and page number.
+5. Refuse when evidence is insufficient.
+6. Do not expose unauthorised or confidential information.
+7. Keep responses concise and professional.
+8. Follow the required output format.
+
+5. FINAL DECISION
+
+The role-based grounded prompting strategy is selected as the final strategy for
+KnowledgeDesk because it provides the strongest combination of groundedness,
+citation accuracy, consistency, low latency overhead, and low implementation cost.
